@@ -18,4 +18,5 @@ class Map:
         pass
 
     def draw(self):
-        for i in tiles
+        for tile in self.Tiles:
+            tile.draw()
