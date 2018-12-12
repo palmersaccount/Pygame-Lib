@@ -8,5 +8,8 @@ class Tile:
         self.SourceRect = [0, 0, w, h]
         self.UsingImage = img
 
-    def draw(self):
-        pass
+    def draw(self, window):
+        if self.UsingImage:
+            pass
+        else:
+            pygame.draw.rect(window)
