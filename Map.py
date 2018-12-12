@@ -1,9 +1,6 @@
 import pygame
 
 class Map:
-    def __init__(self):
-        pass
-print("Hello")
-
-
-print("Palmer's Test")
+    def __init__(self, width, height):
+        self.Width = width
+        self.Height = height
