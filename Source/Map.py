@@ -1,4 +1,5 @@
 import pygame
+import Tile
 
 class Map:
     def __init__(self, width, height, t_w, t_h):
