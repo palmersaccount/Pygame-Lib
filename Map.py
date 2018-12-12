@@ -1,9 +1,6 @@
 import pygame
 
+
 class Map:
-    def __init__(self):
+    def __init__():
         pass
-print("Hello")
-
-
-print("Palmer's Test")
