@@ -8,14 +8,13 @@ class Map:
         self.TILE_WIDTH = t_w
         self.TILE_HEIGHT = t_w
 
-        self.Tiles = []
+        self.Tiles = [[Tile(i, j, t_w, t_h) for i in range(width) for j in range(height)]]
 
-        for x in range(t_w):
-            for y in range(t_h):
-                self.Tiles.append(x, y)
-
-    def set_tile(x, y):
+    def set_tile(self, x, y):
         pass
 
-    def get_tile(x, y):
+    def get_tile(self, x, y):
         pass
+
+    def draw(self):
+        for i in tiles
