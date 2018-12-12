@@ -1,2 +1,2 @@
 import pygame
-from Map import Map
+from Source.Map import Map
