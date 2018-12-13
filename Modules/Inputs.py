@@ -1,28 +1,22 @@
 import pygame
 
+
 CONTROLS = {
-    "Left": pygame.K_LEFT,
-    "Right": pygame.K_RIGHT,
-    "Up": pygame.K_UP,
-    "Down": pygame.K_DOWN
+    "Left": [pygame.key.K_LEFT, pygame.key.K_A],
+    "Right": [pygame.key.K_RIGHT, pygame.key.K_D],
+    "Up": [pygame.key.K_UP, pygame.key.K_W],
+    "Down": [pygame.key.K_DOWN, pygame.key.K_S]
 }
 
 
-def left_down():
-    pass
+def get_control(control_key):
+    return CONTROLS[control_key]
 
 
-def right_down():
-    pass
-
-
-def up_down():
-    pass
-
-
-def down_down():
-    pass
-
-
-def control_down(control_key):
-    for event in pygame.
+def set_control(control_key, control_value):
+    if CONTROLS[control_key] == None:
+        CONTROLS[control_key] = []
+    if isinstance(control_value, list):
+        CONTROLS[control_key].extend(control_value)
+    else:
+        CONTROLS[control_key].append(control_value)
