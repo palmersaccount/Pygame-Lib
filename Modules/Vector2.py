@@ -16,7 +16,7 @@ class Vector2:
 
     # get the length
     def length(self):
-        return self.length_squared() ** (1 / 2)
+        return math.sqrt(self.length_squared())
 
     # get the length squared
     def length_squared(self):
