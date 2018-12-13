@@ -1,4 +1,5 @@
-import pygame
+#import pygame
+
 
 class Tile:
     def __init__(self, x, y, w, h, img=False):
@@ -11,5 +12,5 @@ class Tile:
     def draw(self, window):
         if self.UsingImage:
             pass
-        else:
-            pygame.draw.rect(window)
+        # else:
+            # pygame.draw.rect(window)
