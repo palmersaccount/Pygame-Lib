@@ -1,5 +1,5 @@
 # this file is meant for testing the vectors class
-from Source.Vector2 import Vector2
+from Modules.Vector2 import Vector2
 
 vec1 = Vector2(5, 5)
 print(vec1)
