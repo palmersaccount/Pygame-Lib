@@ -1,7 +1,7 @@
 import math
 
 
-class Vector:
+class Vector2D:
     def __init__(self, x, y):
         self.X = x
         self.Y = y
@@ -24,25 +24,25 @@ class Vector:
 
     # override + operator
     def __add__(self, other):
-        return Vector(self.X + other.X, self.X + other.X)
+        return Vector2D(self.X + other.X, self.X + other.X)
 
     # override * operator
     def __mul__(self, other):
-        if isinstance(other, Vector):
-            return Vector(self.X * other.X, self.X * other.X)
+        if isinstance(other, Vector2D):
+            return Vector2D(self.X * other.X, self.X * other.X)
         else:
-            return Vector(self.X * other, self.Y * other)
+            return Vector2D(self.X * other, self.Y * other)
 
     # override - operator
     def __sub__(self, other):
-        return Vector(self.X - other.X, self.Y - other.Y)
+        return Vector2D(self.X - other.X, self.Y - other.Y)
 
     # override / operator
     def __truediv__(self, other):
-        if isinstance(other, Vector):
-            return Vector(self.X / other.X, self.Y / other.Y)
+        if isinstance(other, Vector2D):
+            return Vector2D(self.X / other.X, self.Y / other.Y)
         else:
-            return Vector(self.X / other, self.Y / other)
+            return Vector2D(self.X / other, self.Y / other)
 
     # override == operator
     def __eq__(self, other):
