@@ -1,10 +1,10 @@
 # this file is meant for testing the vectors class
-from Modules.Vector2 import Vector2
+from Modules.Vector import Vector
 
 # create vectors
-vec1 = Vector2(5, 5)
-vec2 = Vector2(3, 3)
-vec3 = Vector2(5, 5)
+vec1 = Vector(5, 5)
+vec2 = Vector(3, 3)
+vec3 = Vector(5, 5)
 
 # test str
 print(vec1)
