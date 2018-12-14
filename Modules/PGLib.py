@@ -1,14 +1,12 @@
 import pygame
+import sys
+import time
+import Modules.Inputs as Inputs
 
 
-WIDTH = 1600
-HEIGHT = 900
-SIZE = [WIDTH, HEIGHT]
-CAPTION = 'PGLIB Game'
-
-
-def begin(w, h, name):
-    global WIDTH, HEIGHT, SIZE, CAPTION
+def begin(w=1600, h=900, name='PGLIB Game', background=None):
+    global WIDTH, HEIGHT, SIZE, CAPTION, WINDOW
+    global BACKGROUND, BACKGROUND_COLOR
 
     pygame.init()
     window = pygame.display.set_mode((w, h))
@@ -17,6 +15,27 @@ def begin(w, h, name):
     HEIGHT = h
     SIZE = [WIDTH, HEIGHT]
     CAPTION = name
-
+    BACKGROUND_COLOR = [0, 0, 0]
     pygame.display.set_caption(name)
+
+    WINDOW = window
     return window
+
+
+def draw_background():
+    global BACKGROUND_COLOR, BACKGROUND, WINDOW, SIZE
+    WINDOW.fill(BACKGROUND_COLOR)
+
+    # if BACKGROUND != None:
+    #    pygame.image.blit(BACKGROUND, [0, 0], SIZE)
+
+
+def step():
+    draw_background()
+    time.sleep(.003)
+
+
+def end():
+    if Inputs.is_quitting():
+        pygame.quit()
+        sys.exit()
