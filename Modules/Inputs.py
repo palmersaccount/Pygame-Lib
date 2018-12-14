@@ -2,10 +2,10 @@ import pygame
 
 
 CONTROLS = {
-    "Left": [pygame.key.K_LEFT, pygame.key.K_A],
-    "Right": [pygame.key.K_RIGHT, pygame.key.K_D],
-    "Up": [pygame.key.K_UP, pygame.key.K_W],
-    "Down": [pygame.key.K_DOWN, pygame.key.K_S]
+    "Left": [pygame.K_LEFT, pygame.K_a],
+    "Right": [pygame.K_RIGHT, pygame.K_d],
+    "Up": [pygame.K_UP, pygame.K_w],
+    "Down": [pygame.K_DOWN, pygame.K_s]
 }
 
 
