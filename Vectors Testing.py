@@ -1,5 +1,5 @@
 # this file is meant for testing the vectors class
-from Modules.Vector2D import Vector2D
+from Modules.Vector2D import Vector2D as Vector
 
 # create vectors
 vec1 = Vector(5, 5)
@@ -26,7 +26,6 @@ print(vec1 * vec2)
 
 # test division
 print(vec1 / 3.0)
-print(vec1 / vec2)
 
 # test tolist and totuple
 print(vec1.tolist())

@@ -39,10 +39,7 @@ class Vector2D:
 
     # override / operator
     def __truediv__(self, other):
-        if isinstance(other, Vector2D):
-            return Vector2D(self.X / other.X, self.Y / other.Y)
-        else:
-            return Vector2D(self.X / other, self.Y / other)
+        return Vector2D(self.X / other, self.Y / other)
 
     # override == operator
     def __eq__(self, other):
