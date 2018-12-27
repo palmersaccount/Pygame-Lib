@@ -3,8 +3,9 @@ import sys
 import time
 import Modules.Inputs as Inputs
 
+BACKGROUND=None
 
-def begin(w=1600, h=900, name='PGLIB Game', background=None):
+def begin(w=1600, h=900, name='PGLIB Game'):
     global WIDTH, HEIGHT, SIZE, CAPTION, WINDOW
     global BACKGROUND, BACKGROUND_COLOR
 
