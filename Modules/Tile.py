@@ -1,5 +1,5 @@
 import pygame
-from Modules.Vector2 import Vector2
+from Modules.Vector2D import Vector2
 
 
 class Tile:
